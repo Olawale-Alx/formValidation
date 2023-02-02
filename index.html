@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <main class="main-container">
+        <div class="left-container">
+            <h1 id="h1-left">INFORMATION</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae quod consectetur, aut hic laborum! Velit quod quaerat quos nihil consequatur doloribus enim quas corporis non veritatis? Nam, exercitationem? Eum.
+            </p>
+
+            <p>
+                <strong>Lorem ipsum dolor:</strong> sit, amet consectetur adipisicing elit. Consequuntur ratione maiores quibusdam libero repudiandae inventore similique dignissimos ullam voluptas quisquam.
+            </p>
+
+            <button id="account-btn">Have An Account?</button>
+            <a href="./success.html" id="succ">Go to success</a>
+        </div>
+
+        <div class="right-container">
+            <h1 id="h1-right">REGISTRATION FORM</h1>
+
+            <p id="input">input fields cannot be empty</p>
+
+            <form id="submitForm" action="./success.html">
+                <div id="name">
+                    <div id="fname">
+                        <label for="First Name">First Name</label>
+                        <input type="text" name="fname" id="firstname">
+                    </div>
+                    <div id="lname">
+                        <label for="Last Name">Last Name</label>
+                        <input type="text" name="lname" id="lastname">
+                    </div>
+                </div>
+
+                <p id="hidden-name">name cannot be empty and should be more than two char!</p>
+
+                <label for="Your Email">Your Email</label>
+                <input type="email" name="email" id="email">
+
+                <p id="hidden-email">enter a valid email address!</p>
+
+                <div id="password">
+                    <div id="pwd">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="passwd">
+                    </div>
+                    <div id="confirm-password">
+                        <label for="Confirm password">Confirm Password</label>
+                        <input type="password" name="confirm-pwd" id="confirm_pwd">
+                        <p id="pass-no-match">password does not match!!</p>
+                    </div>
+                </div>
+
+                <p id="hidden-password">password type must be char, numbers, sym and must not be less than eight!</p>
+
+                <div id="terms">
+                    <input type="checkbox" name="check-box" id="checked" checked>
+                    <p id="inline">I agree to the <a href="#">Terms and Conditions</a></p>
+                </div>
+                <button id="register-btn">Register</button>
+            </form>
+        </div>
+        <p id="footer">Made by <a href="https://github.com/Olawale-Alx">Olawale</a></p>
+    </main>
+
+    <script src="./jquery3.6.3.min.js"></script>
+    <script src="./validate.js"></script>
+</body>
+</html>
